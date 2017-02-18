@@ -1,0 +1,7 @@
+elkBox ansible_host=localhost ansible_port=2222
+
+[development]
+elkBox
+
+[development:vars]
+ansible_user=vagrant

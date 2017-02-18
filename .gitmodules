@@ -1,0 +1,3 @@
+[submodule "roles/elk"]
+	path = roles/elk
+	url = git@github.com:plumpNation/ansible-elk.git

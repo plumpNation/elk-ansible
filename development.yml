@@ -1,0 +1,9 @@
+---
+- hosts: development
+
+  roles:
+    - { become_user: root, become: yes, role: updates, tags: updates }
+    - { become_user: root, become: yes, role: users, tags: deploy-user }
+    - { become_user: root, become: yes, role: common }
+    - { become_user: root, become: yes, role: system }
+    - { become_user: "{{ users.deploy.name }}", become: yes, role: salesapp, tags: salesapp }
